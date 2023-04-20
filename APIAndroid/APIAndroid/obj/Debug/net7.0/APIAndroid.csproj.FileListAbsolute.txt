@@ -1,0 +1,128 @@
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\appsettings.Development.json
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\appsettings.json
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.exe
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.deps.json
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.runtimeconfig.json
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.pdb
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.csproj.AssemblyReference.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.AssemblyInfoInputs.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.AssemblyInfo.cs
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.csproj.CoreCompileInputs.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.MvcApplicationPartsAssemblyInfo.cs
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.MvcApplicationPartsAssemblyInfo.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets\msbuild.APIAndroid.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets\msbuild.build.APIAndroid.props
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.APIAndroid.props
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.APIAndroid.props
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets.build.json
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets.development.json
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\scopedcss\bundle\APIAndroid.styles.css
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.csproj.CopyComplete
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\refint\APIAndroid.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.pdb
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.genruntimeconfig.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\obj\Debug\net7.0\ref\APIAndroid.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Humanizer.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Npgsql.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\System.CodeDom.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\DAL.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\DAL.pdb
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\AutoMapper.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Services.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Services.pdb
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Magick.NET-Q16-AnyCPU.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\Magick.NET.Core.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\linux-arm64\native\Magick.Native-Q16-arm64.dll.so
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\linux-musl-x64\native\Magick.Native-Q16-x64.dll.so
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\linux-x64\native\Magick.Native-Q16-x64.dll.so
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\osx-arm64\native\Magick.Native-Q16-arm64.dll.dylib
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\osx-x64\native\Magick.Native-Q16-x64.dll.dylib
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win-arm64\native\Magick.Native-Q16-arm64.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win-x64\native\Magick.Native-Q16-x64.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win-x86\native\Magick.Native-Q16-x86.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\appsettings.Development.json
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\appsettings.json
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.exe
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.deps.json
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.runtimeconfig.json
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\APIAndroid.pdb
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\AutoMapper.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Humanizer.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Magick.NET-Q16-AnyCPU.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Magick.NET.Core.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Npgsql.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\System.CodeDom.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\linux-arm64\native\Magick.Native-Q16-arm64.dll.so
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\linux-musl-x64\native\Magick.Native-Q16-x64.dll.so
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\linux-x64\native\Magick.Native-Q16-x64.dll.so
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\osx-arm64\native\Magick.Native-Q16-arm64.dll.dylib
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\osx-x64\native\Magick.Native-Q16-x64.dll.dylib
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win-arm64\native\Magick.Native-Q16-arm64.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win-x64\native\Magick.Native-Q16-x64.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win-x86\native\Magick.Native-Q16-x86.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\DAL.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Services.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\DAL.pdb
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Services.pdb
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.csproj.AssemblyReference.cache
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.GeneratedMSBuildEditorConfig.editorconfig
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.AssemblyInfoInputs.cache
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.AssemblyInfo.cs
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.csproj.CoreCompileInputs.cache
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.MvcApplicationPartsAssemblyInfo.cs
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.MvcApplicationPartsAssemblyInfo.cache
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets\msbuild.APIAndroid.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets\msbuild.build.APIAndroid.props
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.APIAndroid.props
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.APIAndroid.props
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets.build.json
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\staticwebassets.development.json
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\scopedcss\bundle\APIAndroid.styles.css
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.csproj.CopyComplete
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\refint\APIAndroid.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.pdb
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.genruntimeconfig.cache
+D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\ref\APIAndroid.dll

@@ -1,0 +1,30 @@
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\bin\Debug\net7.0\Services.deps.json
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\bin\Debug\net7.0\Services.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\bin\Debug\net7.0\Services.pdb
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\bin\Debug\net7.0\DAL.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\bin\Debug\net7.0\DAL.pdb
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\Services.csproj.AssemblyReference.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\Services.AssemblyInfoInputs.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\Services.AssemblyInfo.cs
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\Services.csproj.CoreCompileInputs.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\Services.csproj.CopyComplete
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\Services.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\refint\Services.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\Services.pdb
+D:\Visual Studio source\APIAndroid\APIAndroid\Services\obj\Debug\net7.0\ref\Services.dll
+D:\Android source\first_android\APIAndroid\Services\bin\Debug\net7.0\Services.deps.json
+D:\Android source\first_android\APIAndroid\Services\bin\Debug\net7.0\Services.dll
+D:\Android source\first_android\APIAndroid\Services\bin\Debug\net7.0\Services.pdb
+D:\Android source\first_android\APIAndroid\Services\bin\Debug\net7.0\DAL.dll
+D:\Android source\first_android\APIAndroid\Services\bin\Debug\net7.0\DAL.pdb
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\Services.csproj.AssemblyReference.cache
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\Services.AssemblyInfoInputs.cache
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\Services.AssemblyInfo.cs
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\Services.csproj.CoreCompileInputs.cache
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\Services.csproj.CopyComplete
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\Services.dll
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\refint\Services.dll
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\Services.pdb
+D:\Android source\first_android\APIAndroid\Services\obj\Debug\net7.0\ref\Services.dll

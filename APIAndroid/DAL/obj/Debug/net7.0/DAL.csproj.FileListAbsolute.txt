@@ -1,0 +1,28 @@
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\bin\Debug\net7.0\DAL.deps.json
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\bin\Debug\net7.0\DAL.runtimeconfig.json
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\bin\Debug\net7.0\DAL.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\bin\Debug\net7.0\DAL.pdb
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\DAL.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\refint\DAL.dll
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\DAL.pdb
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+D:\Visual Studio source\APIAndroid\APIAndroid\DAL\obj\Debug\net7.0\ref\DAL.dll
+D:\Android source\first_android\APIAndroid\DAL\bin\Debug\net7.0\DAL.deps.json
+D:\Android source\first_android\APIAndroid\DAL\bin\Debug\net7.0\DAL.runtimeconfig.json
+D:\Android source\first_android\APIAndroid\DAL\bin\Debug\net7.0\DAL.dll
+D:\Android source\first_android\APIAndroid\DAL\bin\Debug\net7.0\DAL.pdb
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\DAL.dll
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\refint\DAL.dll
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\DAL.pdb
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+D:\Android source\first_android\APIAndroid\DAL\obj\Debug\net7.0\ref\DAL.dll
