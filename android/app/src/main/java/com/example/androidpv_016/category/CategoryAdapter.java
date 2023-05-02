@@ -8,7 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.androidpv_016.R;
 import com.example.androidpv_016.constants.URLs;
 import com.example.androidpv_016.dto.category.CategoryItemDTO;
@@ -16,10 +15,14 @@ import com.example.androidpv_016.dto.category.CategoryItemDTO;
 import java.util.List;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryCardViewHolder> {
-    protected List<CategoryItemDTO> categories;
+    private List<CategoryItemDTO> categories;
+    private OnItemClickListener editCategory;
+    private OnItemClickListener deleteCategory;
 
-    public CategoryAdapter(List<CategoryItemDTO> categories) {
+    public CategoryAdapter(List<CategoryItemDTO> categories, OnItemClickListener editCategory, OnItemClickListener deleteCategory) {
         this.categories = categories;
+        this.editCategory = editCategory;
+        this.deleteCategory = deleteCategory;
     }
 
     @NonNull
@@ -44,6 +47,21 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryCardViewHolder
             Glide.with(holder.getCategoryImage().getContext())
                     .load(imageURL)
                     .into(holder.getCategoryImage());
+
+
+            holder.getBtnEditCategory().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    editCategory.onItemClick(item);
+                }
+            });
+
+            holder.getBtnDeleteCategory().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    deleteCategory.onItemClick(item);
+                }
+            });
         }
     }
 

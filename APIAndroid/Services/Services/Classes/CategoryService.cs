@@ -106,21 +106,26 @@ namespace Services.Services.Classes
                     };
                 }
 
-                var newCategory = _mapper.Map<CategoryEntity>(category);
+                category.Name = model.Name;
+                category.Description = model.Description;
+                category.Priority = model.Priority;
 
-                ImageWorker.RemoveImage(category.Image);
-                category.Image = ImageWorker.SaveImage(model.ImageBase64);
+                if (model.ImageBase64.Length > 0)
+                {
+                    string image = ImageWorker.SaveImage(model.ImageBase64);
+                    ImageWorker.RemoveImage(category.Image);
+                    category.Image = image;
+                }
 
-                await _repository.Update(newCategory);
+                await _repository.Update(category);
 
-                var response = _mapper.Map<CategoryVM>(newCategory);
+                var response = _mapper.Map<CategoryVM>(category);
                 return new ServiceResponse
                 {
                     IsSuccess = true,
                     Message = "Категорія успішно створена",
                     Payload = response
                 };
-
             }
             catch (Exception ex)
             {

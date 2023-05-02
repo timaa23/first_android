@@ -20,10 +20,11 @@ namespace APIAndroid.Controllers
         public async Task<IActionResult> GetAll()
         {
             var result = await _categoryService.GetAllAsync();
+            Thread.Sleep(1500);
             return SendResponse(result);
         }
 
-        [HttpGet("getById")]
+        [HttpGet("getById/{id}")]
         public async Task<IActionResult> GetAll(int id)
         {
             var result = await _categoryService.GetByIdAsync(id);
@@ -37,14 +38,14 @@ namespace APIAndroid.Controllers
             return SendResponse(result);
         }
 
-        [HttpPut("edit")]
+        [HttpPut("edit/{id}")]
         public async Task<IActionResult> Edit(int id, [FromBody] UpdateCategoryVM model)
         {
             var result = await _categoryService.UpdateAsync(id, model);
             return SendResponse(result);
         }
 
-        [HttpDelete("delete")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _categoryService.DeleteAsync(id);
