@@ -126,3 +126,9 @@ D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\refint\AP
 D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.pdb
 D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\APIAndroid.genruntimeconfig.cache
 D:\Android source\first_android\APIAndroid\APIAndroid\obj\Debug\net7.0\ref\APIAndroid.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Android source\first_android\APIAndroid\APIAndroid\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
