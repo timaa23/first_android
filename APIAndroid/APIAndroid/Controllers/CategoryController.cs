@@ -6,7 +6,7 @@ using Services.Services.Interfaces;
 namespace APIAndroid.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] 
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
