@@ -4,4 +4,10 @@
     <string name="category_name_required">Вкажіть назву. Довжина має бути не менше 3 символів</string>
     <string name="category_priority_required">Вкажіть пріорітет. Значення має бути більше 0</string>
     <string name="category_description_required">Вкажіть опис. Довжина має бути не менше 3 символів</string>
+
+    <string name="register_name_required">Вкажіть своє ім\'я. Довжина має бути не менше 3 символів</string>
+    <string name="register_lastName_required">Вкажіть своє прізвище. Довжина має бути не менше 3 символів</string>
+    <string name="register_email_required">Вкажіть свою електронну пошту або перевірте чи вірно вона введена</string>
+    <string name="register_password_required">Вкажіть пароль. Довжина має бути не менше 6 символів</string>
+    <string name="register_differentPasswords">Паролі не співпадають. Перевірте написання</string>
 </resources>

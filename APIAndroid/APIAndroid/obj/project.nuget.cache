@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "1PoH06Pf1zDO01p3IdgCBXe5yfsES3IkbMDlG6ujnFfsKA4Y18vcYKj5jd6J9z+bYWqxxjAzkhB2TvEhDAjPMQ==",
+  "dgSpecHash": "VwcyyGVdwFYzY02Us4qraz9/y1y0A1HjIlhlLlWnfNhi6nBPOqH6nvOZygmHDm8+ydfroE4sK5QVKtW2fe8NIg==",
   "success": true,
   "projectFilePath": "D:\\Android source\\first_android\\APIAndroid\\APIAndroid\\APIAndroid.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tima\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Tima\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Tima\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\Tima\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Tima\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Tima\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Tima\\.nuget\\packages\\magick.net-q16-anycpu\\13.0.1\\magick.net-q16-anycpu.13.0.1.nupkg.sha512",
     "C:\\Users\\Tima\\.nuget\\packages\\magick.net.core\\13.0.1\\magick.net.core.13.0.1.nupkg.sha512",

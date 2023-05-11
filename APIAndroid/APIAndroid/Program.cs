@@ -3,6 +3,7 @@ using DAL;
 using DAL.Entities.Identity;
 using DAL.Repositories.Classes;
 using DAL.Repositories.Interfaces;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -50,6 +51,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services.AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<Program>());
 
 // Add repositories
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();

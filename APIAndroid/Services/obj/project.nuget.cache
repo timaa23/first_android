@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TodnVM7ruDTdtI2JnOq3OphwcVq7zfSwa4RwS+7NCMedSYeHANgVr6wW1LZh66uj4KRlXxed2+c53a2Ecg1mCw==",
+  "dgSpecHash": "8pJpnQiIpqqc6hHNpnkL101bj/2t1F0q4Zu5Hc37KTbxbLu16+wlk8zHrzMhRRQj7+j9BBP3GIm83nZpO8WH9Q==",
   "success": true,
   "projectFilePath": "D:\\Android source\\first_android\\APIAndroid\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tima\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Tima\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\Tima\\.nuget\\packages\\magick.net-q16-anycpu\\13.0.1\\magick.net-q16-anycpu.13.0.1.nupkg.sha512",
     "C:\\Users\\Tima\\.nuget\\packages\\magick.net.core\\13.0.1\\magick.net.core.13.0.1.nupkg.sha512",
     "C:\\Users\\Tima\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.5\\microsoft.aspnetcore.authentication.jwtbearer.7.0.5.nupkg.sha512",

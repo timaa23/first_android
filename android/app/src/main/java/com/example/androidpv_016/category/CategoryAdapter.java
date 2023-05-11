@@ -15,9 +15,9 @@ import com.example.androidpv_016.dto.category.CategoryItemDTO;
 import java.util.List;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryCardViewHolder> {
-    private List<CategoryItemDTO> categories;
-    private OnItemClickListener editCategory;
-    private OnItemClickListener deleteCategory;
+    private final List<CategoryItemDTO> categories;
+    private final OnItemClickListener editCategory;
+    private final OnItemClickListener deleteCategory;
 
     public CategoryAdapter(List<CategoryItemDTO> categories, OnItemClickListener editCategory, OnItemClickListener deleteCategory) {
         this.categories = categories;
@@ -49,19 +49,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryCardViewHolder
                     .into(holder.getCategoryImage());
 
 
-            holder.getBtnEditCategory().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    editCategory.onItemClick(item);
-                }
-            });
-
-            holder.getBtnDeleteCategory().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    deleteCategory.onItemClick(item);
-                }
-            });
+            holder.getBtnEditCategory().setOnClickListener(view -> editCategory.onItemClick(item));
+            holder.getBtnDeleteCategory().setOnClickListener(view -> deleteCategory.onItemClick(item));
         }
     }
 

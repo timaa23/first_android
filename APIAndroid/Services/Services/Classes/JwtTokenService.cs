@@ -29,6 +29,8 @@ namespace Services.Services.Classes
                 claims.Add(new Claim("roles", role));
             }
 
+            TokenHandler th = new JwtSecurityTokenHandler();
+
             var signInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.GetValue<String>("JWTSecretKey")));
             var signInCredentials = new SigningCredentials(signInKey, SecurityAlgorithms.HmacSha256);
 

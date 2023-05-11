@@ -1,23 +1,27 @@
 package com.example.androidpv_016.services;
 
 import com.example.androidpv_016.constants.URLs;
+import com.example.androidpv_016.interceptors.JwtInterceptor;
+import com.example.androidpv_016.network.AccountAPI;
 import com.example.androidpv_016.network.CategoriesAPI;
 
 import java.util.concurrent.TimeUnit;
 
+import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class CategoryNetwork {
-    private static CategoryNetwork instance;
-    private Retrofit retrofit;
+public class ApplicationNetwork {
+    private static ApplicationNetwork instance;
+    private final Retrofit retrofit;
 
-    public CategoryNetwork() {
+    public ApplicationNetwork() {
         OkHttpClient httpClient = new OkHttpClient.Builder()
                 .connectTimeout(20, TimeUnit.SECONDS)
                 .writeTimeout(20, TimeUnit.SECONDS)
                 .readTimeout(20, TimeUnit.SECONDS)
+                .addInterceptor(new JwtInterceptor())
                 .build();
 
         retrofit = new Retrofit.Builder()
@@ -27,13 +31,17 @@ public class CategoryNetwork {
                 .build();
     }
 
-    public static CategoryNetwork getInstance() {
+    public static ApplicationNetwork getInstance() {
         if (instance == null)
-            instance = new CategoryNetwork();
+            instance = new ApplicationNetwork();
         return instance;
     }
 
     public CategoriesAPI getJsonApi() {
         return retrofit.create(CategoriesAPI.class);
+    }
+
+    public AccountAPI getAccountApi() {
+        return retrofit.create(AccountAPI.class);
     }
 }

@@ -6,10 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="32dp"
+            android:text="Щоб переглянути продукти ви повинні увійти в аккаунт"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:onClick="onClickLogin"
+            android:text="Увійти" />
+
+        <TextView
+            android:id="@+id/txtMain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="або"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRegister"
+            android:text="Зареєструватися" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

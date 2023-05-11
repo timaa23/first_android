@@ -16,7 +16,7 @@ import com.oginotihiro.cropview.CropView;
 import java.io.File;
 
 public class ChangeImageActivity extends AppCompatActivity {
-    private static int PICK_IMAGE_RESULT = 20;
+    private final static int PICK_IMAGE_RESULT = 20;
     private CropView cropView;
 
     @Override

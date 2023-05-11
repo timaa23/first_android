@@ -4,22 +4,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidpv_016.R;
-import com.example.androidpv_016.application.HomeApplication;
 
 public class CategoryCardViewHolder extends RecyclerView.ViewHolder {
     private int categoryId;
-    private ImageView categoryImage;
-    private TextView categoryName;
-    private TextView categoryDescription;
+    private final ImageView categoryImage;
+    private final TextView categoryName;
+    private final TextView categoryDescription;
 
-    private Button btnEditCategory;
-    private Button btnDeleteCategory;
+    private final Button btnEditCategory;
+    private final Button btnDeleteCategory;
 
     public CategoryCardViewHolder(@NonNull View itemView) {
         super(itemView);

@@ -18,6 +18,19 @@
           }
         }
       },
+      "FluentValidation/11.5.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Magick.NET-Q16-AnyCPU/13.0.1": {
         "type": "package",
         "dependencies": {
@@ -693,6 +706,29 @@
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
         "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "FluentValidation/11.5.2": {
+      "sha512": "kj/hW/iusp2zq1Vt1YPLgDj6UG0DhoJXGkLwjLwm3j7vUtRF8DVA5vHJfItG3BxDjLWJUR2pvw8fK7rnuysZNA==",
+      "type": "package",
+      "path": "fluentvalidation/11.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.5.2.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
       ]
     },
     "Magick.NET-Q16-AnyCPU/13.0.1": {
@@ -1631,6 +1667,7 @@
     "net7.0": [
       "AutoMapper >= 12.0.1",
       "DAL >= 1.0.0",
+      "FluentValidation >= 11.5.2",
       "Magick.NET-Q16-AnyCPU >= 13.0.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.5",
       "Microsoft.AspNetCore.Http.Features >= 5.0.17",
@@ -1683,6 +1720,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.5.2, )"
           },
           "Magick.NET-Q16-AnyCPU": {
             "target": "Package",

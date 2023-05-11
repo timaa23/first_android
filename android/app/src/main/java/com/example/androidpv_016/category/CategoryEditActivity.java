@@ -1,7 +1,6 @@
 package com.example.androidpv_016.category;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -16,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.androidpv_016.BaseActivity;
 import com.example.androidpv_016.ChangeImageActivity;
 import com.example.androidpv_016.MainActivity;
 import com.example.androidpv_016.R;
@@ -23,7 +23,7 @@ import com.example.androidpv_016.constants.URLs;
 import com.example.androidpv_016.dto.BaseResponseDTO;
 import com.example.androidpv_016.dto.category.CategoryItemDTO;
 import com.example.androidpv_016.dto.category.UpdateCategoryDTO;
-import com.example.androidpv_016.services.CategoryNetwork;
+import com.example.androidpv_016.services.ApplicationNetwork;
 import com.example.androidpv_016.utils.CommonUtils;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -35,7 +35,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class CategoryEditActivity extends AppCompatActivity {
+public class CategoryEditActivity extends BaseActivity {
     private final int SELECT_IMAGE_RESULT = 1000;
 
     CategoryItemDTO category = null;
@@ -106,7 +106,7 @@ public class CategoryEditActivity extends AppCompatActivity {
 
     }
 
-    boolean CheckAllCategoryFields() {
+    private boolean CheckAllCategoryFields() {
         boolean isValid = true;
 
         String categoryName = txtCategoryName.getText().toString().trim();
@@ -219,7 +219,7 @@ public class CategoryEditActivity extends AppCompatActivity {
         }
     }
 
-    void setCurrentCategory() {
+    private void setCurrentCategory() {
         Bundle b = getIntent().getExtras();
 
         int categoryId = -1;
@@ -230,7 +230,7 @@ public class CategoryEditActivity extends AppCompatActivity {
         requestServer(categoryId);
     }
 
-    void setFields() {
+    private void setFields() {
         txtCategoryName.setText(category.getName());
         txtCategoryDescription.setText(category.getDescription());
         txtCategoryPriority.setText(Integer.toString(category.getPriority()));
@@ -241,8 +241,8 @@ public class CategoryEditActivity extends AppCompatActivity {
                 .into(IVPreviewImage);
     }
 
-    void requestServer(int categoryId) {
-        CategoryNetwork
+    private void requestServer(int categoryId) {
+        ApplicationNetwork
                 .getInstance()
                 .getJsonApi()
                 .getCategory(categoryId)
@@ -277,8 +277,8 @@ public class CategoryEditActivity extends AppCompatActivity {
                 });
     }
 
-    void updateCategory(int categoryId, UpdateCategoryDTO updateCategoryDTO) {
-        CategoryNetwork
+    private void updateCategory(int categoryId, UpdateCategoryDTO updateCategoryDTO) {
+        ApplicationNetwork
                 .getInstance()
                 .getJsonApi()
                 .updateCategory(categoryId, updateCategoryDTO)

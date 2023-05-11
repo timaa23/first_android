@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/menu_home"
-        android:title="Головна" />
 
-    <item
-        android:id="@+id/menu_create"
-        android:title="Додати категорію" />
+    <group
+        android:id="@+id/group_anon"
+        android:visible="true">
+        <item
+            android:id="@+id/menu_login"
+            android:title="Вхід" />
+
+        <item
+            android:id="@+id/menu_register"
+            android:title="Реєстрація" />
+    </group>
+
+    <group
+        android:id="@+id/group_main"
+        android:visible="false">
+        <item
+            android:id="@+id/menu_home"
+            android:title="Головна" />
+
+        <item
+            android:id="@+id/menu_create"
+            android:title="Додати категорію" />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:title="Вихід"
+            android:visible="false" />
+    </group>
 </menu>

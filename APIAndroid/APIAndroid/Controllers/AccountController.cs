@@ -24,7 +24,7 @@ namespace APIAndroid.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromForm] RegisterUserVM model)
+        public async Task<IActionResult> Register([FromBody] RegisterUserVM model)
         {
 
             var result = await _accountService.Register(model);

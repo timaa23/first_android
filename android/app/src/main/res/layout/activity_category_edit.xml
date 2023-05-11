@@ -9,10 +9,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".category.CategoryCreateActivity">
+        tools:context=".category.CategoryEditActivity">
 
         <TextView
-            android:id="@+id/addCategoryText"
+            android:id="@+id/editCategoryText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
@@ -28,9 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="32dp"
             android:hint="Назва категорії"
-            app:layout_constraintTop_toBottomOf="@+id/addCategoryText">
+            app:layout_constraintTop_toBottomOf="@+id/editCategoryText">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtCategoryName"
@@ -100,7 +100,7 @@
             app:srcCompat="@drawable/baseline_image_144" />
 
         <Button
-            android:id="@+id/btnCreateCategory"
+            android:id="@+id/btnEditCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"

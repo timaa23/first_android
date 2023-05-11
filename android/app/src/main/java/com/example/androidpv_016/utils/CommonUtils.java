@@ -5,9 +5,6 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 
-import com.example.androidpv_016.R;
-
-
 public final class CommonUtils {
     private static final String TAG = CommonUtils.class.getSimpleName();
     static ProgressDialog progressDialog;

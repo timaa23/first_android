@@ -21,7 +21,7 @@ import com.example.androidpv_016.R;
 import com.example.androidpv_016.dto.BaseResponseDTO;
 import com.example.androidpv_016.dto.category.CategoryItemDTO;
 import com.example.androidpv_016.dto.category.CreateCategoryDTO;
-import com.example.androidpv_016.services.CategoryNetwork;
+import com.example.androidpv_016.services.ApplicationNetwork;
 import com.example.androidpv_016.utils.CommonUtils;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -118,8 +118,8 @@ public class CategoryCreateActivity extends BaseActivity {
         }
     }
 
-    void requestServer(CreateCategoryDTO createCategoryDTO) {
-        CategoryNetwork
+    private void requestServer(CreateCategoryDTO createCategoryDTO) {
+        ApplicationNetwork
                 .getInstance()
                 .getJsonApi()
                 .createCategory(createCategoryDTO)

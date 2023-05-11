@@ -29,5 +29,5 @@ public interface CategoriesAPI {
     public Call<BaseResponseDTO<CategoryItemDTO>> updateCategory(@Path("id") int id, @Body UpdateCategoryDTO model);
 
     @DELETE("/api/Category/delete/{id}")
-    public Call<BaseResponseDTO<CategoryItemDTO>> deleteCategory(@Path("id") int id);
+    public Call<BaseResponseDTO> deleteCategory(@Path("id") int id);
 }
