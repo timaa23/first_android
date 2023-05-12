@@ -5,5 +5,6 @@ namespace Services.Services.Interfaces
     public interface IJwtTokenService
     {
         Task<string> CreateToken(UserEntity user);
+        Task<UserEntity> GetUser(string token);
     }
 }

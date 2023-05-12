@@ -22,7 +22,7 @@ namespace Services.Services.Classes
         public async Task<string> CreateToken(UserEntity user)
         {
             IList<string> roles = await _userManager.GetRolesAsync(user);
-            List<Claim> claims = new List<Claim>() { new Claim("name", user.Email), new Claim("image", user.Image ?? "user.jpg") };
+            List<Claim> claims = new List<Claim>() { new Claim("firstName", user.FirstName), new Claim("lastName", user.LastName), new Claim("email", user.Email), new Claim("image", user.Image ?? "user.jpg") };
 
             foreach (var role in roles)
             {
@@ -36,6 +36,19 @@ namespace Services.Services.Classes
 
             var jwt = new JwtSecurityToken(signingCredentials: signInCredentials, expires: DateTime.Now.AddDays(10), claims: claims);
             return new JwtSecurityTokenHandler().WriteToken(jwt);
+        }
+
+        public async Task<UserEntity> GetUser(string token)
+        {
+            if (token == null)
+                return null;
+
+            var th = new JwtSecurityTokenHandler();
+            var jwst = th.ReadJwtToken(token);
+            var jti = jwst.Claims.First(claim => claim.Type == "email").Value;
+
+            var user = await _userManager.FindByEmailAsync(jti);
+            return user;
         }
     }
 }

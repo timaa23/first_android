@@ -14,7 +14,6 @@ import com.example.androidpv_016.constants.Validation;
 import com.example.androidpv_016.dto.BaseResponseDTO;
 import com.example.androidpv_016.dto.account.LoginDTO;
 import com.example.androidpv_016.dto.account.ValidationLoginErrorDTO;
-import com.example.androidpv_016.dto.account.ValidationRegisterErrorDTO;
 import com.example.androidpv_016.services.ApplicationNetwork;
 import com.example.androidpv_016.utils.CommonUtils;
 import com.example.androidpv_016.utils.UserUtils;

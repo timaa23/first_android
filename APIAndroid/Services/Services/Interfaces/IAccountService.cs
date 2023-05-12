@@ -6,5 +6,6 @@ namespace Services.Services.Interfaces
     {
         Task<ServiceResponse> Login(LoginVM model);
         Task<ServiceResponse> Register(RegisterUserVM model);
+        Task<ServiceResponse> Update(UpdateUserVM model, string token);
     }
 }

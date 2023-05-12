@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidpv_016.account.LoginActivity;
 import com.example.androidpv_016.account.RegisterActivity;
+import com.example.androidpv_016.account.EditUserActivity;
 import com.example.androidpv_016.category.CategoryCreateActivity;
 import com.example.androidpv_016.utils.CommonUtils;
 import com.example.androidpv_016.utils.UserUtils;
@@ -47,6 +48,15 @@ public class BaseActivity extends AppCompatActivity {
             case R.id.menu_create:
                 try {
                     intent = new Intent(BaseActivity.this, CategoryCreateActivity.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception ex) {
+                    System.out.println("--- Problem ---> " + ex.getMessage());
+                }
+                return true;
+            case R.id.menu_profile:
+                try {
+                    intent = new Intent(BaseActivity.this, EditUserActivity.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception ex) {

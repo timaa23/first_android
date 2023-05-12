@@ -22,6 +22,10 @@
             android:title="Головна" />
 
         <item
+            android:id="@+id/menu_profile"
+            android:title="Профіль" />
+
+        <item
             android:id="@+id/menu_create"
             android:title="Додати категорію" />
 

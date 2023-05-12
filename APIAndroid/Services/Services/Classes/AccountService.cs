@@ -1,6 +1,7 @@
 ﻿using APIAndroid.Constants;
 using DAL.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
 using Services.Helpers;
 using Services.Models.Account;
 using Services.Services.Interfaces;
@@ -77,7 +78,48 @@ namespace Services.Services.Classes
                 return new ServiceResponse
                 {
                     IsSuccess = false,
-                    Message = "Помилка реєстрації"
+                    Message = "Помилка реєстрації!"
+                };
+            }
+        }
+
+        public async Task<ServiceResponse> Update(UpdateUserVM model, string token)
+        {
+            var user = await _jwtTokenService.GetUser(token);
+            if (user == null)
+            {
+                return new ServiceResponse
+                {
+                    IsSuccess = false,
+                    Message = "Помилка токену!",
+                };
+            }
+
+            if (!model.ImageBase64.IsNullOrEmpty())
+            {
+                user.Image = ImageWorker.SaveImage(model.ImageBase64);
+            }
+
+            user.FirstName = model.FirstName;
+            user.LastName = model.LastName;
+
+            var result = await _userManager.UpdateAsync(user);
+            if (result.Succeeded)
+            {
+                var newToken = await _jwtTokenService.CreateToken(user);
+                return new ServiceResponse
+                {
+                    IsSuccess = true,
+                    Message = "Все ОК",
+                    Payload = newToken
+                };
+            }
+            else
+            {
+                return new ServiceResponse
+                {
+                    IsSuccess = false,
+                    Message = "Помилка збереження!",
                 };
             }
         }

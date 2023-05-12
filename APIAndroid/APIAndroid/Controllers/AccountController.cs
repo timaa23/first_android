@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
 using Services;
 using Services.Models.Account;
 using Services.Services.Interfaces;
@@ -28,6 +29,14 @@ namespace APIAndroid.Controllers
         {
 
             var result = await _accountService.Register(model);
+            return SendResponse(result);
+        }
+
+        [HttpPost("update")]
+        public async Task<IActionResult> Update([FromBody] UpdateUserVM model)
+        {
+            var token = await HttpContext.GetTokenAsync("access_token");
+            var result = await _accountService.Update(model, token);
             return SendResponse(result);
         }
 

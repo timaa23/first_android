@@ -1,6 +1,5 @@
 package com.example.androidpv_016.category;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,12 +8,12 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.androidpv_016.BaseActivity;
-import com.example.androidpv_016.MainActivity;
 import com.example.androidpv_016.R;
 import com.example.androidpv_016.dto.BaseResponseDTO;
 import com.example.androidpv_016.dto.category.CategoryItemDTO;
 import com.example.androidpv_016.services.ApplicationNetwork;
 import com.example.androidpv_016.utils.CommonUtils;
+import com.example.androidpv_016.utils.UserUtils;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -27,6 +26,7 @@ import retrofit2.Response;
 public class CategoryListActivity extends BaseActivity {
     CategoryAdapter adapter;
     RecyclerView recyclerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +37,12 @@ public class CategoryListActivity extends BaseActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2, RecyclerView.VERTICAL, false));
         recyclerView.setAdapter(new CategoryAdapter(new ArrayList<>(), CategoryListActivity.this::onClickEditCategory, CategoryListActivity.this::onClickDeleteCategory));
 
+        UserUtils.getUser();
+
         CommonUtils.showLoading();
         requestServer();
     }
+
     void requestServer() {
         ApplicationNetwork
                 .getInstance()
@@ -56,11 +59,11 @@ public class CategoryListActivity extends BaseActivity {
 
                             adapter = new CategoryAdapter(dataList, CategoryListActivity.this::onClickEditCategory, CategoryListActivity.this::onClickDeleteCategory);
                             recyclerView.setAdapter(adapter);
-                            CommonUtils.hideLoading();
                         } else {
                             Toast.makeText(CategoryListActivity.this, categoryResponse.getMessage(), Toast.LENGTH_LONG).show();
-                            CommonUtils.hideLoading();
                         }
+
+                        CommonUtils.hideLoading();
                     }
 
                     @Override
@@ -70,6 +73,7 @@ public class CategoryListActivity extends BaseActivity {
                     }
                 });
     }
+
     void requestServerRemoveCategory(int id) {
         ApplicationNetwork
                 .getInstance()

@@ -255,15 +255,14 @@ public class CategoryEditActivity extends BaseActivity {
                             category = categoryResponse.getPayload();
 
                             setFields();
-
-                            CommonUtils.hideLoading();
                         } else {
                             Toast.makeText(CategoryEditActivity.this, categoryResponse.getMessage(), Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(CategoryEditActivity.this, MainActivity.class);
                             startActivity(intent);
                             finish();
-                            CommonUtils.hideLoading();
                         }
+
+                        CommonUtils.hideLoading();
                     }
 
                     @Override
@@ -291,11 +290,11 @@ public class CategoryEditActivity extends BaseActivity {
                             Intent intent = new Intent(CategoryEditActivity.this, MainActivity.class);
                             startActivity(intent);
                             finish();
-                            CommonUtils.hideLoading();
                         } else {
                             Toast.makeText(CategoryEditActivity.this, categoryResponse.getMessage(), Toast.LENGTH_LONG).show();
-                            CommonUtils.hideLoading();
                         }
+
+                        CommonUtils.hideLoading();
                     }
 
                     @Override

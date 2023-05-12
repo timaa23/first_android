@@ -1,12 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DAL.Entities.Identity;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Services;
 using Services.Models.Category;
 using Services.Services.Interfaces;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace APIAndroid.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")] 
+    [Route("api/[controller]")]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
@@ -20,7 +24,6 @@ namespace APIAndroid.Controllers
         public async Task<IActionResult> GetAll()
         {
             var result = await _categoryService.GetAllAsync();
-            Thread.Sleep(1500);
             return SendResponse(result);
         }
 
