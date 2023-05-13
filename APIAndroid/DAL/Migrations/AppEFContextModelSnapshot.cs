@@ -52,7 +52,12 @@ namespace DAL.Migrations
                     b.Property<int>("Priority")
                         .HasColumnType("integer");
 
+                    b.Property<int>("UserID")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserID");
 
                     b.ToTable("tbl_categories");
                 });
@@ -231,10 +236,12 @@ namespace DAL.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("text");
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("text");
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("text");
@@ -255,10 +262,12 @@ namespace DAL.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("text");
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("Value")
                         .HasColumnType("text");
@@ -266,6 +275,17 @@ namespace DAL.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("DAL.Entities.CategoryEntity", b =>
+                {
+                    b.HasOne("DAL.Entities.Identity.UserEntity", "User")
+                        .WithMany("Categories")
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DAL.Entities.Identity.UserRoleEntity", b =>
@@ -330,6 +350,8 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DAL.Entities.Identity.UserEntity", b =>
                 {
+                    b.Navigation("Categories");
+
                     b.Navigation("UserRoles");
                 });
 #pragma warning restore 612, 618

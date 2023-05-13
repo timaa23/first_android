@@ -6,5 +6,6 @@ namespace Services.Services.Interfaces
     {
         Task<string> CreateToken(UserEntity user);
         Task<UserEntity> GetUser(string token);
+        Task<IList<string>> GetUserRoles(UserEntity token);
     }
 }

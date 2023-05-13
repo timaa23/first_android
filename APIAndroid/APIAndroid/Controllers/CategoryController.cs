@@ -1,14 +1,13 @@
-﻿using DAL.Entities.Identity;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services;
 using Services.Models.Category;
 using Services.Services.Interfaces;
-using System.IdentityModel.Tokens.Jwt;
 
 namespace APIAndroid.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class CategoryController : ControllerBase
@@ -37,21 +36,27 @@ namespace APIAndroid.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> Create([FromBody] CreateCategoryVM model)
         {
-            var result = await _categoryService.CreateAsync(model);
+            var token = await HttpContext.GetTokenAsync("access_token");
+
+            var result = await _categoryService.CreateAsync(model, token);
             return SendResponse(result);
         }
 
         [HttpPut("edit/{id}")]
         public async Task<IActionResult> Edit(int id, [FromBody] UpdateCategoryVM model)
         {
-            var result = await _categoryService.UpdateAsync(id, model);
+            var token = await HttpContext.GetTokenAsync("access_token");
+
+            var result = await _categoryService.UpdateAsync(id, model, token);
             return SendResponse(result);
         }
 
         [HttpDelete("delete/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await _categoryService.DeleteAsync(id);
+            var token = await HttpContext.GetTokenAsync("access_token");
+
+            var result = await _categoryService.DeleteAsync(id, token);
             return SendResponse(result);
         }
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DAL.Entities.Identity;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -17,5 +18,8 @@ namespace DAL.Entities
 
         [StringLength(4000)]
         public string Description { get; set; }
+
+        public int UserID { get; set; }
+        public UserEntity User { get; set; }
     }
 }

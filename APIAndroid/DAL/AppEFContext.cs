@@ -32,6 +32,12 @@ namespace DAL
                     .HasForeignKey(u => u.UserId)
                     .IsRequired();
             });
+
+            //builder.Entity<UserEntity>()
+            //    .HasMany(c => c.Categories)
+            //    .WithOne(u => u.User)
+            //    .HasForeignKey(u => u.UserID)
+            //    .IsRequired();
         }
     }
 }

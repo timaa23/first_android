@@ -1,10 +1,6 @@
 ﻿using DAL.Entities;
 using DAL.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repositories.Classes
 {
@@ -13,7 +9,6 @@ namespace DAL.Repositories.Classes
         public CategoryRepository(AppEFContext context)
             : base(context)
         {
-
         }
 
         public IQueryable<CategoryEntity> Categories => GetAll();

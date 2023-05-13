@@ -22,19 +22,6 @@ namespace APIAndroid
 
                 context.Database.Migrate();
 
-                if (!categoryManager.Categories.Any())
-                {
-                    var category = new CategoryEntity
-                    {
-                        Name = "Телефони",
-                        Image = "null.jpg",
-                        Description = "Телефони на IOS та Android",
-                        Priority = 0,
-                        DateCreated = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc)
-                    };
-                    await categoryManager.Create(category);
-                }
-
                 if (!context.Roles.Any())
                 {
                     RoleEntity admin = new RoleEntity
@@ -66,6 +53,20 @@ namespace APIAndroid
                             .AddToRoleAsync(user, Roles.Admin)
                             .Result;
                     }
+                }
+
+                if (!categoryManager.Categories.Any())
+                {
+                    var category = new CategoryEntity
+                    {
+                        Name = "Телефони",
+                        Image = "null.jpg",
+                        Description = "Телефони на IOS та Android",
+                        Priority = 0,
+                        DateCreated = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc),
+                        User = userManager.Users.First()
+                    };
+                    await categoryManager.Create(category);
                 }
             }
         }

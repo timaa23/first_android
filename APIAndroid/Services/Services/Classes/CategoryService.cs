@@ -1,5 +1,7 @@
-﻿using AutoMapper;
+﻿using APIAndroid.Constants;
+using AutoMapper;
 using DAL.Entities;
+using DAL.Entities.Identity;
 using DAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Services.Helpers;
@@ -11,12 +13,14 @@ namespace Services.Services.Classes
     public class CategoryService : ICategoryService
     {
         private readonly ICategoryRepository _repository;
+        private readonly IJwtTokenService _jwtTokenService;
         private readonly IMapper _mapper;
 
-        public CategoryService(ICategoryRepository repository, IMapper mapper)
+        public CategoryService(ICategoryRepository repository, IMapper mapper, IJwtTokenService jwtTokenService)
         {
             _repository = repository;
             _mapper = mapper;
+            _jwtTokenService = jwtTokenService;
         }
 
         public async Task<ServiceResponse> GetAllAsync()
@@ -30,7 +34,6 @@ namespace Services.Services.Classes
                 {
                     IsSuccess = true,
                     Message = "Список категорій пустий",
-                    Payload = response
                 };
             }
 
@@ -64,12 +67,23 @@ namespace Services.Services.Classes
             };
         }
 
-        public async Task<ServiceResponse> CreateAsync(CreateCategoryVM model)
+        public async Task<ServiceResponse> CreateAsync(CreateCategoryVM model, string token)
         {
             try
             {
+                var user = await _jwtTokenService.GetUser(token);
+                if (user == null)
+                {
+                    return new ServiceResponse
+                    {
+                        IsSuccess = false,
+                        Message = "Помилка токену!",
+                    };
+                }
+
                 var category = _mapper.Map<CategoryEntity>(model);
 
+                category.User = user;
                 category.Image = ImageWorker.SaveImage(model.ImageBase64);
 
                 await _repository.Create(category);
@@ -92,7 +106,7 @@ namespace Services.Services.Classes
             }
         }
 
-        public async Task<ServiceResponse> UpdateAsync(int id, UpdateCategoryVM model)
+        public async Task<ServiceResponse> UpdateAsync(int id, UpdateCategoryVM model, string token)
         {
             try
             {
@@ -103,6 +117,25 @@ namespace Services.Services.Classes
                     {
                         IsSuccess = false,
                         Message = "Категорія з таким ID не знайдена"
+                    };
+                }
+
+                var user = await _jwtTokenService.GetUser(token);
+                if (user == null)
+                {
+                    return new ServiceResponse
+                    {
+                        IsSuccess = false,
+                        Message = "Помилка токену!",
+                    };
+                }
+
+                if (!await HasRightsToChange(user, category))
+                {
+                    return new ServiceResponse
+                    {
+                        IsSuccess = false,
+                        Message = "Вибачте, ви не маєте права змінювати категорію"
                     };
                 }
 
@@ -123,7 +156,7 @@ namespace Services.Services.Classes
                 return new ServiceResponse
                 {
                     IsSuccess = true,
-                    Message = "Категорія успішно створена",
+                    Message = "Категорія успішно змінена",
                     Payload = response
                 };
             }
@@ -132,23 +165,41 @@ namespace Services.Services.Classes
                 return new ServiceResponse
                 {
                     IsSuccess = false,
-                    Message = "Помилка створення: " + ex.Message
+                    Message = "Помилка редагування: " + ex.Message
                 };
             }
         }
 
-        public async Task<ServiceResponse> DeleteAsync(int id)
+        public async Task<ServiceResponse> DeleteAsync(int id, string token)
         {
             try
             {
                 var category = await _repository.GetById(id);
-
                 if (category == null)
                 {
                     return new ServiceResponse
                     {
                         IsSuccess = false,
                         Message = "Категорія з таким ID не знайдена"
+                    };
+                }
+
+                var user = await _jwtTokenService.GetUser(token);
+                if (user == null)
+                {
+                    return new ServiceResponse
+                    {
+                        IsSuccess = false,
+                        Message = "Помилка токену!",
+                    };
+                }
+
+                if (!await HasRightsToChange(user, category))
+                {
+                    return new ServiceResponse
+                    {
+                        IsSuccess = false,
+                        Message = "Вибачте, ви не маєте права змінювати категорію"
                     };
                 }
 
@@ -169,6 +220,17 @@ namespace Services.Services.Classes
                     Message = "Помилка видалення: " + ex.Message
                 };
             }
+        }
+
+        private async Task<bool> HasRightsToChange(UserEntity user, CategoryEntity category)
+        {
+            return await IsAdmin(user) || category.UserID == user.Id;
+        }
+
+        private async Task<bool> IsAdmin(UserEntity user)
+        {
+            var userRoles = await _jwtTokenService.GetUserRoles(user);
+            return userRoles.Any(ur => ur.Equals(Roles.Admin));
         }
     }
 }

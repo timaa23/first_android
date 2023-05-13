@@ -38,6 +38,11 @@ namespace Services.Services.Classes
             return new JwtSecurityTokenHandler().WriteToken(jwt);
         }
 
+        public async Task<IList<string>> GetUserRoles(UserEntity user)
+        {
+            return await _userManager.GetRolesAsync(user);
+        }
+
         public async Task<UserEntity> GetUser(string token)
         {
             if (token == null)
